@@ -1,0 +1,53 @@
+root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --accent #D4AF37;
+  --thin-gold-border: 1px solid #ffd700;
+  --subtle-metallic-gradient: linear-gradient(to bottom, #ffd700, #ffd700);
+}
+
+body  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Playfair Display', serif;
+}
+
+.button {
+  background-color: var(--accent);
+  color:(--foreground);
+  border: var(--thin-gold-border);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--subtle-metallic-gradient);
+}
+
+.card {
+  background-color: var(--background);
+  padding: 20px;
+  border: var(--thin-gold-border);
+  border-radius: 10px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 20px;
+}
+
+.error-state {
+  text-align center;
+  padding 20px;
+  color: red;
+}
